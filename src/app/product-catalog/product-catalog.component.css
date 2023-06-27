@@ -1,0 +1,21 @@
+.product_item{
+	width: 100%;
+	height: auto;
+
+}
+
+.img{
+	
+	height: 140px;
+}
+
+.product_item__inner{
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+	align-items: center;
+}
+.product-title{
+	max-width: 150px;
+	
+}

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { GetDataService } from './get-data.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'itea_advanced';
+
+	products:any;
+
+	constructor(public api: GetDataService) {}
+
+  ngAfterViewInit(): void {
+    this.api.getData().subscribe(data => {
+      this.products = data;
+      console.log(this.products)
+    });
+  }
 }
