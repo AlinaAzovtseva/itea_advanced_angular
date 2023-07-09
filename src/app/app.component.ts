@@ -9,14 +9,5 @@ import { GetDataService } from './get-data.service';
 })
 export class AppComponent {
 
-	products:any;
-
-	constructor(public api: GetDataService) {}
-
-  ngAfterViewInit(): void {
-    this.api.getData().subscribe(data => {
-      this.products = data;
-      console.log(this.products)
-    });
-  }
+	
 }

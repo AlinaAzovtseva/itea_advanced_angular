@@ -1,5 +1,45 @@
-app-product-catalog{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	grid-gap: 10px;
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.app{
+	
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.top-container{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	margin-bottom: 100px;
+}
+
+.nav-rout {
+	padding-left: 40px;
+}
+
+.nav-rout a{
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: 40px;
+	color: #000;
+
+}
+.search-input{
+	background-color: rgb(228, 223, 223);
+	border: solid 1px lightgrey;
+	max-width: 500px;
+	padding-right: 30px;
+	flex-grow: 1;
+	padding-left: 3px;
+	margin-left: 50px;
+	font-size: 14px;
+}
+
+.nav-panel button{
+	background-color: rgb(228, 223, 223);
+	border: none;
+	margin-left: 40px;
+	cursor: pointer;
 }

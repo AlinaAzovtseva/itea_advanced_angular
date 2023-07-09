@@ -9,13 +9,11 @@
 	height: 140px;
 }
 
-.product_item__inner{
-	display: flex;
-	justify-content: space-between;
-	font-size: 10px;
-	align-items: center;
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-gap: 10px;
 }
-.product-title{
-	max-width: 150px;
-	
+h2{
+	margin-left: 50px;
 }

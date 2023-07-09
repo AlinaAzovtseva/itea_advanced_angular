@@ -1,5 +1,27 @@
-<div class="container">
-	<app-product-catalog [products]="products">
-	
-	</app-product-catalog>
+<div class="app">
+	<header class="top-container">
+
+		<div class="nav-rout">
+			<a routerLink="products">Shop</a>
+			<a routerLink="about">About</a>
+			<a routerLink="contact">Contact</a>
+		</div>	
+		<input class="search-input" type="text">
+		<div class="nav-panel">
+			
+			<button>Search</button>
+			<button>My account</button>
+			<button>Cart</button>
+		</div>
+
+	</header>
+<main>
+	<router-outlet></router-outlet>
+</main>
+<footer></footer>	
 </div>
+
+
+	
+	
+
